@@ -1,5 +1,5 @@
 /**
- * The program makes rock paper scissors
+ * The program plays a guessing game
  *
  *
  * By:      Sydney Kuhn
