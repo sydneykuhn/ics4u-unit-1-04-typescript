@@ -11,7 +11,7 @@ import promptSync from 'prompt-sync'
 const prompt = promptSync()
 const min = 1
 const max = 6
-const mystery = Math.floor(Math.random() * max) + min
+const randomInt = Math.floor(Math.random() * max) + min
 let guesses = 1
 
 while (true) {
@@ -24,11 +24,11 @@ while (true) {
     }
     if (guess < 1 || guess > 6) {
       console.log('Not an integer between 1-6.')
-    } else if (guess === mystery) {
+    } else if (guess === randomInt) {
       console.log('\nYou guessed the number!')
       console.log(`It took you ${guesses} tries to guess correctly.`)
       break
-    } else if (guess > mystery) {
+    } else if (guess > randomInt) {
       console.log('That number is too high, guess lower.')
     } else {
       console.log('That number is too low, guess higher.')
